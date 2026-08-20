@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impressos | FD Gráfica</title>
+  <meta name="description" content="Impressos FD Gráfica: cartões, panfletos, folders, catálogos, revistas, blocos, receituários, pastas e muito mais.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/categoria.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-top">
+    <div class="container header-top-row">
+      <a href="../index.html" class="brand">
+        <img src="../assets/images/logo-fd-grafica.jpeg" alt="FD Gráfica">
+      </a>
+
+      <div class="benefits">
+        <div><strong>Atendimento rápido</strong><span>Orçamento pelo WhatsApp</span></div>
+        <div><strong>Produção completa</strong><span>Da arte à impressão</span></div>
+        <div><strong>Fortaleza - CE</strong><span>Atendimento local</span></div>
+      </div>
+
+      <a href="https://wa.me/558597062246" target="_blank" class="whatsapp">
+        <span>Fale no WhatsApp</span>
+        <strong>(85) 9706-2246</strong>
+      </a>
+    </div>
+  </div>
+
+  <div class="search-band">
+    <div class="container">
+      <div class="search-box">
+        <input id="searchInput" type="search" placeholder="Buscar produto...">
+        <button id="searchButton">Buscar</button>
+        <div id="searchResults" class="search-results"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-band">
+    <div class="container">
+      <button id="mobileMenu" class="mobile-menu">☰ Menu</button>
+      <nav id="mainMenu" class="main-menu">
+        <a href="../index.html">Início</a>
+        <a class="active" href="impressos.html">Impressos</a>
+        <a href="comunicacao-visual.html">Comunicação Visual</a>
+        <a href="adesivos.html">Adesivos</a>
+        <a href="personalizados.html">Personalizados</a>
+        <a href="embalagens.html">Embalagens</a>
+        <a href="design.html">Design</a>
+        <a href="../index.html#contato">Contato</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="category-hero">
+    <div class="container category-hero-inner">
+      <div>
+        <span class="eyebrow">LINHA DE PRODUTOS</span>
+        <h1>Impressos</h1>
+        <p>Encontre cartões, panfletos, folders, catálogos, revistas, blocos, receituários, pastas e outros materiais gráficos.</p>
+      </div>
+      <div class="hero-art">
+        <div class="sheet sheet1">CARTÃO</div>
+        <div class="sheet sheet2">CATÁLOGO</div>
+        <div class="sheet sheet3">FOLDER</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="catalog-shell" id="produtos">
+    <div class="container catalog-layout">
+
+      <aside class="sidebar">
+        <div class="side-title">Categorias</div>
+
+        <div class="side-section">
+          <button class="side-toggle open">Impressos <span>−</span></button>
+          <div class="side-list open">
+            <a href="#cartoes">Cartões de Visita</a>
+            <a href="#panfletos">Panfletos e Flyers</a>
+            <a href="#folders">Folders</a>
+            <a href="#catalogos">Catálogos e Revistas</a>
+            <a href="#papelaria">Papelaria</a>
+            <a href="#blocos">Blocos e Talões</a>
+            <a href="#eventos">Convites e Eventos</a>
+          </div>
+        </div>
+
+        <a class="side-link" href="comunicacao-visual.html">Comunicação Visual <span>›</span></a>
+        <a class="side-link" href="adesivos.html">Adesivos <span>›</span></a>
+        <a class="side-link" href="personalizados.html">Personalizados <span>›</span></a>
+        <a class="side-link" href="embalagens.html">Embalagens <span>›</span></a>
+        <a class="side-link" href="design.html">Design Gráfico <span>›</span></a>
+
+        <div class="side-contact">
+          <strong>Não encontrou?</strong>
+          <span>Envie o que precisa pelo WhatsApp.</span>
+          <a href="https://wa.me/558597062246" target="_blank">Pedir orçamento</a>
+        </div>
+      </aside>
+
+      <div class="catalog-content">
+        <div class="catalog-toolbar">
+          <div>
+            <strong>Impressos</strong>
+            <span id="countLabel">28 produtos</span>
+          </div>
+
+          <div class="toolbar-actions">
+            <select id="sortSelect" aria-label="Ordenar produtos">
+              <option value="featured">Mais procurados</option>
+              <option value="az">Nome A-Z</option>
+              <option value="za">Nome Z-A</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="chips">
+          <button class="chip active" data-filter="all">Todos</button>
+          <button class="chip" data-filter="cartoes">Cartões</button>
+          <button class="chip" data-filter="promocionais">Promocionais</button>
+          <button class="chip" data-filter="editorial">Editorial</button>
+          <button class="chip" data-filter="papelaria">Papelaria</button>
+          <button class="chip" data-filter="eventos">Eventos</button>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+
+          <article class="product-card" data-category="cartoes" data-name="Cartão de Visita">
+            <div class="product-image pi1">CARTÃO</div>
+            <div class="product-info"><span>Cartões</span><h3>Cartão de Visita</h3><p>Couchê, PVC, metalizado e opções com acabamentos especiais.</p><a href="../produtos/cartao-de-visita.html" target="_blank">Ver opções</a></div>
+          </article>
+
+          <article class="product-card" data-category="cartoes" data-name="Cartão Duplo">
+            <div class="product-image pi2">CARTÃO DUPLO</div>
+            <div class="product-info"><span>Cartões</span><h3>Cartão Duplo</h3><p>Mais espaço para informações, cardápios compactos e serviços.</p><a href="../produtos/cartao-duplo.html" target="_blank">Ver opções</a></div>
+          </article>
+
+          <article class="product-card" data-category="cartoes" data-name="Cartão PVC">
+            <div class="product-image pi3">PVC</div>
+            <div class="product-info"><span>Cartões</span><h3>Cartão PVC</h3><p>Material resistente para identificação, fidelidade e cartões especiais.</p><a href="../produtos/cartao-pvc.html" target="_blank">Ver opções</a></div>
+          </article>
+
+          <article class="product-card" data-category="promocionais" data-name="Panfletos">
+            <div class="product-image pi4">PANFLETO</div>
+            <div class="product-info"><span>Promocionais</span><h3>Panfletos</h3><p>Diversos formatos para divulgação de produtos, serviços e eventos.</p><a href="../produtos/panfletos.html" target="_blank">Ver opções</a></div>
+          </article>
+
+          <article class="product-card" data-category="promocionais" data-name="Flyers">
+            <div class="product-image pi5">FLYER</div>
+            <div class="product-info"><span>Promocionais</span><h3>Flyers</h3><p>Divulgação rápida com excelente apresentação visual.</p><a href="../produtos/flyers.html" target="_blank">Ver opções</a></div>
+          </article>
+
+          <article class="product-card" data-category="promocionais" data-name="Folders">
+            <div class="product-image pi6">FOLDER</div>
+            <div class="product-info"><span>Promocionais</span><h3>Folders</h3><p>Dobras variadas para apresentar empresas, serviços e campanhas.</p><a href="../produtos/folders.html" target="_blank">Ver opções</a></div>
+          </article>
+
+          <article class="product-card" data-category="editorial" data-name="Catálogos">
+            <div class="product-image pi7">CATÁLOGO</div>
+            <div class="product-info"><span>Editorial</span><h3>Catálogos</h3><p>Catálogos comerciais, institucionais e de produtos.</p><a href="../produtos/catalogos.html" target="_blank">Ver opções</a></div>
+          </article>
+
+          <article class="product-card" data-category="editorial" data-name="Revistas">
+            <div class="product-image pi8">REVISTA</div>
+            <div class="product-info"><span>Editorial</span><h3>Revistas</h3><p>Projetos editoriais para empresas, escolas, eventos e publicações.</p><a href="../produtos/revistas.html" target="_blank">Ver opções</a></div>
+          </article>
+
+          <article class="product-card" data-category="editorial" data-name="Livros">
+            <div class="product-image pi9">LIVRO</div>
+            <div class="product-info"><span>Editorial</span><h3>Livros</h3><p>Produção para pequenas e médias tiragens.</p><a href="../produtos/livros.html" target="_blank">Ver opções</a></div>
+          </article>
+
+          <article class="product-card" data-category="editorial" data-name="Apostilas">
+            <div class="product-image pi10">APOSTILA</div>
+            <div class="product-info"><span>Editorial</span><h3>Apostilas</h3><p>Materiais didáticos, treinamentos e conteúdo corporativo.</p><a href="../produtos/apostilas.html" target="_blank">Ver opções</a></div>
+          </article>
+
+          <article class="product-card" data-category="papelaria" data-name="Receituários">
+            <div class="product-image pi11">RECEITUÁRIO</div>
+            <div class="product-info"><span>Papelaria</span><h3>Receituários</h3><p>Para clínicas, consultórios e profissionais liberais.</p><a href="../produtos/receituarios.html" target="_blank">Ver opções</a></div>
+          </article>
+
+          <article class="product-card" data-category="papelaria" data-name="Papel Timbrado">
+            <div class="product-image pi12">TIMBRADO</div>
+            <div class="product-info"><span>Papelaria</span><h3>Papel Timbrado</h3><p>Documentos corporativos com identidade profissional.</p><a href="../produtos/papel-timbrado.html" target="_blank">Ver opções</a></div>
+          </article>
+
+          <article class="product-card" data-category="papelaria" data-name="Envelopes">
+            <div class="product-image pi13">ENVELOPE</div>
+            <div class="product-info"><span>Papelaria</span><h3>Envelopes</h3><p>Formatos comerciais e personalizados para empresas.</p><a href="../produtos/envelopes.html" target="_blank">Ver opções</a></div>
+          </article>
+
+          <article class="product-card" data-category="papelaria" data-name="Pastas">
+            <div class="product-image pi14">PASTA</div>
+            <div class="product-info"><span>Papelaria</span><h3>Pasta Personalizada</h3><p>Apresentação de propostas, contratos e materiais institucionais.</p><a href="../produtos/pastas.html" target="_blank">Ver opções</a></div>
+          </article>
+
+          <article class="product-card" data-category="papelaria" data-name="Blocos">
+            <div class="product-image pi15">BLOCO</div>
+            <div class="product-info"><span>Papelaria</span><h3>Bloco de Notas</h3><p>Blocos simples e personalizados para uso comercial.</p><a href="../produtos/blocos.html" target="_blank">Ver opções</a></div>
+          </article>
+
+          <article class="product-card" data-category="papelaria" data-name="Blocos Autocopiativos">
+            <div class="product-image pi16">AUTO</div>
+            <div class="product-info"><span>Papelaria</span><h3>Blocos Autocopiativos</h3><p>Pedidos, ordens de serviço e controles internos.</p><a href="../produtos/blocos-autocopiativos.html" target="_blank">Ver opções</a></div>
+          </article>
+
+          <article class="product-card" data-category="papelaria" data-name="Talões">
+            <div class="product-image pi17">TALÃO</div>
+            <div class="product-info"><span>Papelaria</span><h3>Talões</h3><p>Numerados ou personalizados para rotinas empresariais.</p><a href="../produtos/taloes.html" target="_blank">Ver opções</a></div>
+          </article>
+
+          <article class="product-card" data-category="promocionais" data-name="Cartazes">
+            <div class="product-image pi18">CARTAZ</div>
+            <div class="product-info"><span>Promocionais</span><h3>Cartazes</h3><p>Divulgação para lojas, campanhas, avisos e eventos.</p><a href="../produtos/cartazes.html" target="_blank">Ver opções</a></div>
+          </article>
+
+          <article class="product-card" data-category="promocionais" data-name="Postais">
+            <div class="product-image pi19">POSTAL</div>
+            <div class="product-info"><span>Promocionais</span><h3>Postais</h3><p>Divulgação, convites e ações de relacionamento.</p><a href="../produtos/postais.html" target="_blank">Ver opções</a></div>
+          </article>
+
+          <article class="product-card" data-category="eventos" data-name="Convites">
+            <div class="product-image pi20">CONVITE</div>
+            <div class="product-info"><span>Eventos</span><h3>Convites</h3><p>Corporativos, sociais e personalizados.</p><a href="../produtos/convites.html" target="_blank">Ver opções</a></div>
+          </article>
+
+          <article class="product-card" data-category="promocionais" data-name="Cardápios">
+            <div class="product-image pi21">CARDÁPIO</div>
+            <div class="product-info"><span>Promocionais</span><h3>Cardápios</h3><p>Para restaurantes, lanchonetes, cafeterias e delivery.</p><a href="../produtos/cardapios.html" target="_blank">Ver opções</a></div>
+          </article>
+
+          <article class="product-card" data-category="promocionais" data-name="Calendários">
+            <div class="product-image pi22">CALENDÁRIO</div>
+            <div class="product-info"><span>Promocionais</span><h3>Calendário de Mesa</h3><p>De mesa, parede e formatos personalizados.</p><a href="../produtos/calendarios.html" target="_blank">Ver opções</a></div>
+          </article>
+
+          <article class="product-card" data-category="promocionais" data-name="Marcadores de Página">
+            <div class="product-image pi23">MARCADOR</div>
+            <div class="product-info"><span>Promocionais</span><h3>Marcadores de Página</h3><p>Material promocional econômico e versátil.</p><a href="../produtos/marcadores-de-pagina.html" target="_blank">Ver opções</a></div>
+          </article>
+
+          <article class="product-card" data-category="promocionais" data-name="Ventarolas">
+            <div class="product-image pi24">VENTAROLA</div>
+            <div class="product-info"><span>Promocionais</span><h3>Ventarolas</h3><p>Campanhas, eventos, divulgação e ações promocionais.</p><a href="../produtos/ventarolas.html" target="_blank">Ver opções</a></div>
+          </article>
+
+          <article class="product-card" data-category="papelaria" data-name="Agendas">
+            <div class="product-image pi25">AGENDA</div>
+            <div class="product-info"><span>Papelaria</span><h3>Agendas</h3><p>Personalização corporativa e institucional.</p><a href="../produtos/agendas.html" target="_blank">Ver opções</a></div>
+          </article>
+
+          <article class="product-card" data-category="papelaria" data-name="Cadernos">
+            <div class="product-image pi26">CADERNO</div>
+            <div class="product-info"><span>Papelaria</span><h3>Cadernos</h3><p>Personalizados para empresas, escolas e eventos.</p><a href="../produtos/cadernos.html" target="_blank">Ver opções</a></div>
+          </article>
+
+          <article class="product-card" data-category="editorial" data-name="Jornais">
+            <div class="product-image pi27">JORNAL</div>
+            <div class="product-info"><span>Editorial</span><h3>Jornais</h3><p>Informativos, publicações institucionais e promocionais.</p><a href="../produtos/jornais.html" target="_blank">Ver opções</a></div>
+          </article>
+
+          <article class="product-card" data-category="promocionais" data-name="Tags">
+            <div class="product-image pi28">TAG</div>
+            <div class="product-info"><span>Promocionais</span><h3>Tags</h3><p>Para produtos, roupas, embalagens e presentes.</p><a href="../produtos/tags.html" target="_blank">Ver opções</a></div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="category-cta" id="contato">
+    <div class="container category-cta-inner">
+      <div>
+        <strong>Precisa de um impresso diferente?</strong>
+        <span>Envie as medidas, quantidade e referência pelo WhatsApp.</span>
+      </div>
+      <a href="https://wa.me/558597062246" target="_blank">Solicitar orçamento</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <img src="../assets/images/logo-fd-grafica.jpeg" alt="FD Gráfica">
+      <p>Impressos, comunicação visual, personalizados e design gráfico.</p>
+    </div>
+    <div><h4>Categorias</h4><a href="#produtos">Impressos</a><a href="comunicacao-visual.html">Comunicação Visual</a><a href="adesivos.html">Adesivos</a><a href="personalizados.html">Personalizados</a></div>
+    <div><h4>Serviços</h4><a href="embalagens.html">Embalagens</a><a href="design.html">Design Gráfico</a><a href="#">Digital</a></div>
+    <div><h4>Contato</h4><span>Fortaleza - CE</span><a href="https://wa.me/558597062246" target="_blank">(85) 9706-2246</a></div>
+  </div>
+  <div class="container footer-bottom">© <span id="year"></span> FD Gráfica.</div>
+</footer>
+
+<script src="../assets/js/categoria-impressos.js"></script>
+</body>
+</html>

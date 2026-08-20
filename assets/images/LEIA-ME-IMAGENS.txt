@@ -1,0 +1,9 @@
+As imagens desta V3 foram produzidas a partir dos mockups visuais aprovados durante o desenvolvimento.
+Elas funcionam como acabamento profissional inicial.
+
+Para a versão final de produção, substitua gradualmente por fotografias reais da FD Gráfica:
+- assets/images/banners/
+- assets/images/produtos/
+- assets/images/portfolio/
+
+Mantenha os mesmos nomes dos arquivos para não precisar alterar o HTML.
