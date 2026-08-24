@@ -114,3 +114,11 @@ img{display:block;max-width:100%}
 @media(max-width:430px){
   .product-grid,.footer-grid{grid-template-columns:1fr}
 }
+
+.product-image{overflow:hidden}.product-image img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s ease}.product-card:hover .product-image img{transform:scale(1.035)}
+
+.product-image{overflow:hidden}.product-image img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s ease}.product-card:hover .product-image img{transform:scale(1.035)}
+
+.product-image{overflow:hidden}.product-image img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s ease}.product-card:hover .product-image img{transform:scale(1.035)}
+
+.product-image{overflow:hidden}.product-image img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s ease}.product-card:hover .product-image img{transform:scale(1.035)}

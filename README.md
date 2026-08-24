@@ -1,8 +1,6 @@
-# FD GRÁFICA — SITE MESTRE V5 COM IMAGENS
+# FD GRÁFICA — SITE MESTRE V7.2 — IMAGENS EXCLUSIVAS
 
 Projeto consolidado com Home, categorias e páginas individuais de produto.
-
-Esta versão inclui imagens demonstrativas profissionais em alta resolução. Para substituí-las posteriormente por trabalhos reais, mantenha os mesmos nomes dos arquivos dentro de `assets/images/banners/`.
 
 ## Incluído
 - Home
@@ -20,7 +18,7 @@ Esta versão inclui imagens demonstrativas profissionais em alta resolução. Pa
 
 ## Estrutura
 
-FD-GRAFICA-SITE-MESTRE-v5-IMAGENS/
+FD-GRAFICA-SITE-MESTRE-v2/
 ├── index.html
 ├── categorias/
 ├── produtos/
@@ -37,8 +35,11 @@ FD-GRAFICA-SITE-MESTRE-v5-IMAGENS/
 3. Navegue pelas categorias e produtos.
 4. Para publicar, envie TODO o conteúdo da pasta para o GitHub Pages.
 
-## Observação importante
-As imagens dos produtos ainda são representações visuais em CSS. Substituir por fotos reais será a próxima fase de acabamento visual.
+## Imagens ilustrativas
+- Versão construída sobre a base oficial V7.1.
+- 94 imagens publicitárias fictícias, sem repetição, criadas especificamente para cada produto ou serviço.
+- Fotografias em alta resolução (1536×1024), otimizadas em JPG para uso no site.
+- As imagens são demonstrativas e podem ser substituídas posteriormente por trabalhos reais.
 
 
 ## V3 — Acabamento visual
@@ -53,9 +54,22 @@ Esta versão adiciona:
 
 As imagens atuais são visuais profissionais derivados dos mockups aprovados no projeto.
 
-## V4 — Ajustes do carrossel e destaques
 
-- tipografia do carrossel redimensionada para evitar sobreposição;
-- transição ajustada para exibir somente o slide ativo;
-- responsividade refinada para celular, tablet e computador;
-- “Caixas Personalizadas” substituída por “Tags e Etiquetas” em Produtos mais vendidos.
+## V7.1 — Menu A-Z + imagens
+- Menu lateral ordenado alfabeticamente de A a Z.
+- 73 itens no catálogo.
+- Cada item possui imagem ilustrativa HD 1200×800 no painel da direita.
+- Imagens foram produzidas a partir dos visuais fotográficos já existentes no projeto e adaptadas para cada produto.
+- Busca e filtros mantidos.
+- Clique no produto → foto + descrição + especificações + orçamento.
+
+## V7.2 — Imagens publicitárias exclusivas
+- Menu lateral alfabético da V7.1 preservado.
+- Imagem exclusiva inserida em cada página individual de produto ou serviço.
+- Cards da Home e das categorias atualizados com as novas imagens.
+- Nenhuma composição visual foi reutilizada entre os 94 itens.
+- Catálogo lateral interativo sincronizado com os 94 produtos e serviços.
+- Painel lateral corrigido para exibir a imagem exclusiva correspondente ao item selecionado.
+- Filtros laterais reorganizados pelas categorias oficiais do site.
+- Telefone e links do WhatsApp atualizados para (85) 98706-2246.
+- Quatro imagens do carrossel substituídas por fotografias publicitárias exclusivas em 1536×1024.
