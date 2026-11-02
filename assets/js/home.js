@@ -25,12 +25,23 @@ function fdRenderList(){
     : `<div class="catalog-empty">Nenhum item encontrado.</div>`;
   fdList.querySelectorAll(".catalog-item").forEach(btn=>btn.onclick=()=>fdSelect(btn.dataset.fdName));
 }
+const FD_CATALOG_GALLERIES={
+  "Adesivo com Corte Especial":["assets/images/adesivos/corte-01.jpg","assets/images/adesivos/corte-02.jpg","assets/images/adesivos/corte-03.jpg"],
+  "Adesivo Leitoso":["assets/images/adesivos/leitoso-01.jpg","assets/images/adesivos/leitoso-02.jpg","assets/images/adesivos/leitoso-03.jpg"],
+  "Adesivo Troca de Óleo":["assets/images/adesivos/oleo-01.jpg","assets/images/adesivos/oleo-02.jpg","assets/images/adesivos/oleo-03.jpg"],
+  "Adesivo Vidro Perfurado":["assets/images/adesivos/perfurado-01.jpg","assets/images/adesivos/perfurado-02.jpg","assets/images/adesivos/perfurado-03.jpg"]
+};
 function fdSelect(name){
   const item=FD_CATALOG.find(x=>x.name===name); if(!item)return;
   fdActive=name;
   const msg=encodeURIComponent(`Olá! Gostaria de orçamento para: ${item.name}`);
+  const images=FD_CATALOG_GALLERIES[item.name]||[item.image];
+  let imageIndex=0;
   fdDetail.innerHTML=`
-    <img class="catalog-product-photo" src="${item.image}" alt="${item.name}" loading="lazy">
+    <div class="catalog-gallery" aria-label="Galeria de imagens de ${item.name}">
+      <img class="catalog-product-photo" src="${images[0]}" alt="${item.name} — imagem 1 de ${images.length}" loading="lazy">
+      ${images.length>1?`<button type="button" class="catalog-gallery-arrow prev" aria-label="Imagem anterior">‹</button><button type="button" class="catalog-gallery-arrow next" aria-label="Próxima imagem">›</button><div class="catalog-gallery-count">1 / ${images.length}</div><div class="catalog-gallery-dots">${images.map((_,i)=>`<button type="button" class="${i===0?'active':''}" data-gallery-index="${i}" aria-label="Mostrar imagem ${i+1}"></button>`).join("")}</div>`:''}
+    </div>
     <div class="catalog-detail-body">
       <span class="catalog-category">${item.group.toUpperCase()}</span>
       <h3>${item.name}</h3>
@@ -42,6 +53,20 @@ function fdSelect(name){
         <a class="secondary-v7" href="#contato">Falar com atendimento</a>
       </div>
     </div>`;
+  const gallery=fdDetail.querySelector(".catalog-gallery");
+  if(images.length>1){
+    const showImage=(nextIndex)=>{
+      imageIndex=(nextIndex+images.length)%images.length;
+      const photo=gallery.querySelector(".catalog-product-photo");
+      photo.src=images[imageIndex];
+      photo.alt=`${item.name} — imagem ${imageIndex+1} de ${images.length}`;
+      gallery.querySelector(".catalog-gallery-count").textContent=`${imageIndex+1} / ${images.length}`;
+      gallery.querySelectorAll(".catalog-gallery-dots button").forEach((dot,i)=>dot.classList.toggle("active",i===imageIndex));
+    };
+    gallery.querySelector(".prev").addEventListener("click",()=>showImage(imageIndex-1));
+    gallery.querySelector(".next").addEventListener("click",()=>showImage(imageIndex+1));
+    gallery.querySelectorAll("[data-gallery-index]").forEach(dot=>dot.addEventListener("click",()=>showImage(Number(dot.dataset.galleryIndex))));
+  }
   fdRenderList();
   // Não rolar a página ao selecionar o primeiro produto; a Home deve abrir no topo.
 }
