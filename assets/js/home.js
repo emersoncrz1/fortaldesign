@@ -29,8 +29,9 @@ const FD_CATALOG_GALLERIES={
   "Adesivo com Corte Especial":["assets/images/adesivos/corte-01.jpg","assets/images/adesivos/corte-02.jpg","assets/images/adesivos/corte-03.jpg"],
   "Adesivo Leitoso":["assets/images/adesivos/leitoso-01.jpg","assets/images/adesivos/leitoso-02.jpg","assets/images/adesivos/leitoso-03.jpg"],
   "Adesivo Troca de Óleo":["assets/images/adesivos/oleo-01.jpg","assets/images/adesivos/oleo-02.jpg","assets/images/adesivos/oleo-03.jpg"],
-  "Adesivo Vidro Perfurado":["assets/images/adesivos/perfurado-01.jpg","assets/images/adesivos/perfurado-02.jpg","assets/images/adesivos/perfurado-03.jpg"]
-,  "Placas de PVC":["assets/images/comunicacao/placas-pvc/DFDFS.jpg","assets/images/comunicacao/placas-pvc/images.jpg","assets/images/comunicacao/placas-pvc/placa_pvc_led__led_studio_90_comunicacao_visual_sorocaba_1-8448b39c8d9f58bf6817346168532192-1024-1024.webp","assets/images/comunicacao/placas-pvc/placa-de-pvc-pvc-vinil-4x0-159838303914395164175f4563bf208ec.png"]
+  "Adesivo Vidro Perfurado":["assets/images/adesivos/perfurado-01.jpg","assets/images/adesivos/perfurado-02.jpg","assets/images/adesivos/perfurado-03.jpg"],
+  "Placas de PVC":["assets/images/comunicacao/placas-pvc/DFDFS.jpg","assets/images/comunicacao/placas-pvc/images.jpg","assets/images/comunicacao/placas-pvc/placa_pvc_led__led_studio_90_comunicacao_visual_sorocaba_1-8448b39c8d9f58bf6817346168532192-1024-1024.webp","assets/images/comunicacao/placas-pvc/placa-de-pvc-pvc-vinil-4x0-159838303914395164175f4563bf208ec.png"],
+  "Faixas":["assets/images/comunicacao/Faixas/DWDWDQWD.jpg","assets/images/comunicacao/Faixas/D_NQ_NP_839198-MLB91890647226_092025-OO-faixa-de-lona-personalizada-115mtx62cm.jpg"]
 };
 function fdSelect(name){
   const item=FD_CATALOG.find(x=>x.name===name); if(!item)return;
