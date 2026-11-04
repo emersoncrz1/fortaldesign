@@ -26,6 +26,14 @@ function fdRenderList(){
   fdList.querySelectorAll(".catalog-item").forEach(btn=>btn.onclick=()=>fdSelect(btn.dataset.fdName));
 }
 const FD_CATALOG_GALLERIES={
+  "Cardápios":["assets/images/impressos/Cardapios/cardapios-01.png","assets/images/impressos/Cardapios/cardapios-02.jpg"],
+  "Certificados":["assets/images/impressos/Certificados/certificados-01.jpg","assets/images/impressos/Certificados/certificados-02.jpg","assets/images/impressos/Certificados/certificados-03.jpg"],
+  "Comandas":["assets/images/impressos/Comandas/comandas-01.jpg","assets/images/impressos/Comandas/comandas-02.jpg"],
+  "Ficha":["assets/images/impressos/Fichas/fichas-01.webp","assets/images/impressos/Fichas/fichas-02.webp"],
+  "Folders":["assets/images/impressos/Folders/folders-01.jpg","assets/images/impressos/Folders/folders-02.jpg","assets/images/impressos/Folders/folders-03.jpg","assets/images/impressos/Folders/folders-04.jpg"],
+  "Cartazes":["assets/images/impressos/Panfletos-e-Cartazes/panfletos-e-cartazes-02.webp","assets/images/impressos/Panfletos-e-Cartazes/panfletos-e-cartazes-03.jpg"],
+  "Panfletos, Flyers e Folhetos":["assets/images/impressos/Panfletos-e-Cartazes/panfletos-e-cartazes-01.webp"],
+
   "Adesivo com Corte Especial":["assets/images/adesivos/corte-01.jpg","assets/images/adesivos/corte-02.jpg","assets/images/adesivos/corte-03.jpg"],
   "Adesivo Leitoso":["assets/images/adesivos/leitoso-01.jpg","assets/images/adesivos/leitoso-02.jpg","assets/images/adesivos/leitoso-03.jpg"],
   "Adesivo Troca de Óleo":["assets/images/adesivos/oleo-01.jpg","assets/images/adesivos/oleo-02.jpg","assets/images/adesivos/oleo-03.jpg"],
