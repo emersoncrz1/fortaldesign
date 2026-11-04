@@ -31,7 +31,8 @@ const FD_CATALOG_GALLERIES={
   "Adesivo Troca de Óleo":["assets/images/adesivos/oleo-01.jpg","assets/images/adesivos/oleo-02.jpg","assets/images/adesivos/oleo-03.jpg"],
   "Adesivo Vidro Perfurado":["assets/images/adesivos/perfurado-01.jpg","assets/images/adesivos/perfurado-02.jpg","assets/images/adesivos/perfurado-03.jpg"],
   "Placas de PVC":["assets/images/comunicacao/placas-pvc/DFDFS.jpg","assets/images/comunicacao/placas-pvc/images.jpg","assets/images/comunicacao/placas-pvc/placa_pvc_led__led_studio_90_comunicacao_visual_sorocaba_1-8448b39c8d9f58bf6817346168532192-1024-1024.webp","assets/images/comunicacao/placas-pvc/placa-de-pvc-pvc-vinil-4x0-159838303914395164175f4563bf208ec.png"],
-  "Faixas":["assets/images/comunicacao/Faixas/DWDWDQWD.jpg","assets/images/comunicacao/Faixas/D_NQ_NP_839198-MLB91890647226_092025-OO-faixa-de-lona-personalizada-115mtx62cm.jpg"]
+  "Faixas":["assets/images/comunicacao/Faixas/DWDWDQWD.jpg","assets/images/comunicacao/Faixas/D_NQ_NP_839198-MLB91890647226_092025-OO-faixa-de-lona-personalizada-115mtx62cm.jpg"],
+  "Banners":["assets/images/comunicacao/banners/br-11134207-81z1k-mhi3a97kkwzm2f.jpg","assets/images/comunicacao/banners/D_NQ_NP_783168-MLB110476727300_052026-OO-banner-personalizado-70x100cm-impressao-digital-bastao.jpg","assets/images/comunicacao/banners/D_NQ_NP_821452-MLB120317234143_102026-OO-combo-banners-black-friday-promocao-divulgacao-2-unids.jpg"]
 };
 function fdSelect(name){
   const item=FD_CATALOG.find(x=>x.name===name); if(!item)return;
