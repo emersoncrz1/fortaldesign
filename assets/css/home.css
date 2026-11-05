@@ -257,3 +257,12 @@ body{background:#020912;color:#f6f9ff;font-family:Inter,Arial,sans-serif}
   .catalog-left{position:static;max-height:390px;min-height:0}
   .catalog-list{max-height:190px;overflow-y:auto}
 }
+
+/* Carrossel exclusivo do destaque Advocacia — preserva dimensões do card */
+.niche-advocacia .niche-slideshow{position:absolute;inset:0;overflow:hidden}
+.niche-advocacia .niche-slideshow img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:nicheAdvocaciaFade 12s infinite}
+.niche-advocacia .niche-slideshow img:nth-child(1){animation-delay:0s}
+.niche-advocacia .niche-slideshow img:nth-child(2){animation-delay:-9s}
+.niche-advocacia .niche-slideshow img:nth-child(3){animation-delay:-6s}
+.niche-advocacia .niche-slideshow img:nth-child(4){animation-delay:-3s}
+@keyframes nicheAdvocaciaFade{0%,2%{opacity:0}5%,22%{opacity:1}25%,100%{opacity:0}}
