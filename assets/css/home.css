@@ -266,3 +266,12 @@ body{background:#020912;color:#f6f9ff;font-family:Inter,Arial,sans-serif}
 .niche-advocacia .niche-slideshow img:nth-child(3){animation-delay:-6s}
 .niche-advocacia .niche-slideshow img:nth-child(4){animation-delay:-3s}
 @keyframes nicheAdvocaciaFade{0%,2%{opacity:0}5%,22%{opacity:1}25%,100%{opacity:0}}
+
+/* Carrossel exclusivo do destaque Medicina — mesmas dimensões dos cards */
+.niche-medicina .niche-slideshow{position:absolute;inset:0;overflow:hidden}
+.niche-medicina .niche-slideshow img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:nicheMedicinaFade 12s infinite}
+.niche-medicina .niche-slideshow img:nth-child(1){animation-delay:0s}
+.niche-medicina .niche-slideshow img:nth-child(2){animation-delay:-9s}
+.niche-medicina .niche-slideshow img:nth-child(3){animation-delay:-6s}
+.niche-medicina .niche-slideshow img:nth-child(4){animation-delay:-3s}
+@keyframes nicheMedicinaFade{0%,2%{opacity:0}5%,22%{opacity:1}25%,100%{opacity:0}}
