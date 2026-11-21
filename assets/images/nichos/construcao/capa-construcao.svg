@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+<rect width="1000" height="1000" fill="#ffd900"/>
+<g transform="translate(500 390)">
+<path d="M0-300 82-300 105-225 174-198 236-244 294-186 250-124 276-52 354-42 354 42 276 52 250 124 294 186 236 244 174 198 105 225 82 300H-82L-105 225-174 198-236 244-294 186-250 124-276 52-354 42-354-42-276-52-250-124-294-186-236-244-174-198-105-225-82-300Z" fill="#f58220" stroke="#fff" stroke-width="12" stroke-linejoin="round"/>
+<circle r="242" fill="#fff" stroke="#102c4c" stroke-width="14"/>
+<g fill="#102c4c">
+<path d="M-190 90V-75h54v-65h50V90Z"/>
+<path d="M-120 90V-10L0-105 120-10V90H55V28H-20V90Z"/>
+<path d="M-35-75 65-75 65-165 135-165 135-75 175-75 175-35 130-35 130 90H-35Z" opacity=".96"/>
+</g>
+<g fill="#fff">
+<path d="M-175-48h18v22h-18zm38-10h18v22h-18zm-38 45h18v22h-18zm38 0h18v22h-18zm-38 45h18v22h-18zm38 0h18v22h-18z"/>
+<path d="M-82 6 0-62 82 6v84H30V34H-25V90h-57Z"/>
+<path d="M-8-118h20v20H-8zm36 0h20v20H28zm-36 36h20v20H-8zm36 0h20v20H28z"/>
+</g>
+<g stroke="#102c4c" stroke-width="14" fill="none" stroke-linecap="round">
+<path d="M-10-190H180M25-190V-80M180-190 135-145"/>
+</g>
+<path d="M-5-190h185l-24 18H-5Z" fill="#f58220" stroke="#102c4c" stroke-width="10"/>
+<path d="M160-172v60l-18 20-18-20v-60" fill="#f58220" stroke="#102c4c" stroke-width="10"/>
+<path d="M-160 168h320" stroke="#f58220" stroke-width="14" stroke-linecap="round"/>
+</g>
+<path d="M115 760Q500 700 885 760" fill="none" stroke="#102c4c" stroke-width="18" stroke-linecap="round"/>
+<text x="500" y="855" text-anchor="middle" font-family="Arial,sans-serif" font-size="76" font-weight="900" letter-spacing="3" fill="#102c4c" stroke="#fff" stroke-width="8" paint-order="stroke">CONSTRUÇÃO</text>
+<path d="M230 900Q500 950 770 900" fill="none" stroke="#f58220" stroke-width="16" stroke-linecap="round"/>
+</svg>
