@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+<defs>
+ <radialGradient id="bg"><stop stop-color="#176b36"/><stop offset=".68" stop-color="#075126"/><stop offset="1" stop-color="#022d18"/></radialGradient>
+ <linearGradient id="gold" x2="0" y2="1"><stop stop-color="#fff1a8"/><stop offset=".35" stop-color="#e9b93e"/><stop offset=".7" stop-color="#a86b12"/><stop offset="1" stop-color="#ffe18a"/></linearGradient>
+ <linearGradient id="blue" x2="0" y2="1"><stop stop-color="#4d8fe0"/><stop offset=".5" stop-color="#123c78"/><stop offset="1" stop-color="#071d43"/></linearGradient>
+ <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#b9c7d9"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur in="SourceAlpha" stdDeviation="16"/><feOffset dy="18"/><feComponentTransfer><feFuncA type="linear" slope=".55"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1000" height="1000" fill="url(#bg)"/>
+<circle cx="500" cy="480" r="390" fill="none" stroke="url(#gold)" stroke-width="13" opacity=".9"/>
+<path d="M150 790 Q500 900 850 790" fill="none" stroke="url(#gold)" stroke-width="22" stroke-linecap="round"/>
+<g filter="url(#shadow)">
+ <!-- globe -->
+ <circle cx="700" cy="330" r="155" fill="url(#blue)" stroke="url(#gold)" stroke-width="16"/>
+ <path d="M632 202q40 20 60 0l20 36-20 34 18 30-22 30-42-8-20-42-42-16 10-38zM720 340l45-24 40 22-8 52-38 42-30-16-12-39zM622 380l42 15 20 40-20 38-45-16-22-43z" fill="url(#paper)" stroke="#dce8f8" stroke-width="5"/>
+ <path d="M700 175q-80 120-70 300M580 260q120 55 240 0M570 380q130 65 260 0" fill="none" stroke="#8cc6ff" stroke-width="5" opacity=".7"/>
+ <!-- pencil cup -->
+ <path d="M205 360h205l-25 300q-75 55-155 0z" fill="url(#gold)" stroke="#fff0b0" stroke-width="12"/>
+ <path d="M205 360q100-35 205 0" fill="none" stroke="#fff1bc" stroke-width="15"/>
+ <path d="M245 360l-10-180 34-65 34 65-10 180z" fill="#e83b37" stroke="#fff" stroke-width="9"/>
+ <path d="M305 360l15-230 32-60 32 60-10 230z" fill="#f4c340" stroke="#fff" stroke-width="9"/>
+ <path d="M365 360l35-175 30-55 24 66-44 164z" fill="#2e83d0" stroke="#fff" stroke-width="9"/>
+ <path d="M262 200l7-85 34 0 7 85M331 130l-11-60 32-55 32 55-10 60M410 185l22-70 25-30 10 44" fill="none" stroke="#182d4b" stroke-width="8"/>
+ <!-- open book -->
+ <path d="M145 635q180-80 355 5v180q-175-90-355-5z" fill="url(#paper)" stroke="#fff" stroke-width="14"/>
+ <path d="M500 640q175-85 355-5v180q-180-85-355 5z" fill="url(#paper)" stroke="#fff" stroke-width="14"/>
+ <path d="M500 640v175" stroke="#193c69" stroke-width="15"/>
+ <path d="M185 680q140-55 265 0M185 730q140-55 265 0M540 680q135-55 265 0M540 730q135-55 265 0" fill="none" stroke="#8ca4c4" stroke-width="9" stroke-linecap="round"/>
+ <!-- graduation cap -->
+ <path d="M295 530l205-105 205 105-205 105z" fill="url(#blue)" stroke="#fff" stroke-width="13"/>
+ <path d="M365 570v90q135 90 270 0v-90" fill="url(#blue)" stroke="#d9e7fa" stroke-width="12"/>
+ <path d="M500 425v-45q70-30 110 5" fill="none" stroke="url(#gold)" stroke-width="12"/>
+ <circle cx="610" cy="385" r="14" fill="url(#gold)"/>
+ <path d="M610 400v145q-22 30 0 45 22-15 0-45" fill="none" stroke="url(#gold)" stroke-width="13"/>
+</g>
+<path d="M250 875q250 60 500 0" fill="none" stroke="#f5c34e" stroke-width="12" stroke-linecap="round"/>
+</svg>
